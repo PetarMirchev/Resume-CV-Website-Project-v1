@@ -194,3 +194,69 @@ body {
     color: rgb(234, 206, 135);
     font-weight: bold;
 }
+
+
+
+.container .card-two .group-3 .desc {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+
+.container .card-two .group-3 .desc ul {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+
+.container .card-two .group-3 .desc ul::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: -22px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: goldenrod;
+}
+
+
+.container .card-two .group-3 .desc ul li {
+    list-style-type: none;
+    position: relative;
+}
+
+
+.container .card-two .group-3 .desc ul li::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: -18px;
+    height: 80px;
+    border-left: 2px solid goldenrod;
+}
+
+
+
+.container .card-two .group-3 .desc ul li div:last-of-type {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.container .card-two .group-3 .desc ul:last-of-type li::before{
+    content: none;
+}
+
+
+@media print {
+    @page {
+        margin: 0;
+        size: A4;
+    }
+
+    * {
+        /* -webkit-print-color-adjust: exact; */
+        print-color-adjust: exact;
+    }
+}
