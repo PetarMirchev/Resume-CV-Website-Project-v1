@@ -127,3 +127,70 @@ body {
     font-size: 1.8rem;
     font-weight: 400;
 }
+
+
+.container .card-two .box {
+    display: inline-block;
+    padding: 10px 70px 2px 20px;
+    margin-left: -20px;
+    margin-top: 35px;
+    background-color: goldenrod;
+    color: #313131;
+}
+
+
+.container .card-two .group-1 .desc {
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+
+.container .card-two .group-2 .desc {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.container .card-two .group-2 .desc ul{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+
+.container .card-two .group-2 .desc ul::before{
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: -22px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: goldenrod;
+}
+
+
+.container .card-two .group-2 .desc ul li {
+    list-style-type: none;
+    position: relative;
+}
+
+
+.container .card-two .group-2 .desc ul li::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: -18px;
+    height: 80px;
+    border-left: 2px solid goldenrod;
+}
+
+/* cut last line, to stop on last dot */
+.container .card-two .group-2 .desc ul:last-of-type li::before{
+    content: none;
+}
+
+
+.container .card-two .group-2 .desc ul li div:last-of-type {
+    color: rgb(234, 206, 135);
+    font-weight: bold;
+}
