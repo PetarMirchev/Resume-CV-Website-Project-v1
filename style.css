@@ -89,5 +89,41 @@ body {
 
 
 .container .card-one .personal-box .dot.active {
-    background-color: blue;
+    background-color: rgb(206, 255, 47);
+}
+
+
+
+.container .card-one .hobbies-box {
+   margin-top: 30px;
+}
+
+
+.container .card-one .hobbies-box .logo {
+    margin: 10px 0px;
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+    font-size: 1.5rem;
+    gap: 15px;
+}
+
+
+.container .card-one .hobbies-box .logo .icons {
+    margin-top: 10px;
+    width: 60px;
+    color: #313131;
+}
+
+
+.container .card-two{
+    background-color: rgb(55, 40, 190);
+    padding: 40px 20px;
+    padding-right: 75px;
+    color: rgb(160, 147, 160);
+}
+
+
+.container .card-two .head-title {
+    font-size: 1.8rem;
+    font-weight: 400;
 }
